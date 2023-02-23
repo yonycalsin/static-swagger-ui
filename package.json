@@ -1,0 +1,36 @@
+{
+  "name": "@yonycalsin/static-swagger-ui",
+  "private": true,
+  "license": "ISC",
+  "author": "Yony Calsin",
+  "scripts": {
+    "lib:pretty": "prettier --ignore-path .gitignore \"**/*.{js,json,ts,md}\"",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "clean:force": "pnpm run clean && turbo run clean:force",
+    "dev": "turbo run dev --no-cache --continue",
+    "lint": "run-p lint:*",
+    "lint:es": "turbo run lint:es",
+    "lint:pretty": "pnpm run lib:pretty --list-different",
+    "fix:lint": "run-s fix:lint:*",
+    "fix:lint:pretty": "pnpm run lib:pretty --write",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.4.8",
+    "@changesets/cli": "2.26.0",
+    "@yonycalsin/prettier-config-node-typescript": "2.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.8.4",
+    "turbo": "1.8.1"
+  },
+  "packageManager": "pnpm@7.14.2",
+  "engines": {
+    "node": "16.15.0"
+  },
+  "volta": {
+    "node": "16.15.0"
+  }
+}
