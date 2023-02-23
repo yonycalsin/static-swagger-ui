@@ -1,0 +1,36 @@
+{
+  "name": "@static-swagger-ui/core",
+  "version": "0.0.0",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Yony Calsin",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "clean": "rimraf -rf .turbo dist",
+    "clean:force": "rimraf -rf node_modules",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "lint:es": "eslint \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "@static-swagger-ui/common": "workspace:*",
+    "swagger-ui-dist": "4.15.5"
+  },
+  "devDependencies": {
+    "@static-swagger-ui/eslint-config": "workspace:*",
+    "@static-swagger-ui/tsconfig": "workspace:*",
+    "@types/node": "18.14.0",
+    "eslint": "8.34.0",
+    "rimraf": "4.1.2",
+    "tsup": "6.6.3",
+    "typescript": "4.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
