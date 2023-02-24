@@ -17,6 +17,9 @@
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
     "lint:es": "eslint \"src/**/*.ts*\""
   },
+  "dependencies": {
+    "detect-package-manager": "2.0.1"
+  },
   "devDependencies": {
     "@static-swagger-ui/eslint-config": "workspace:*",
     "@static-swagger-ui/tsconfig": "workspace:*",

@@ -1,6 +1,9 @@
+import { detect } from 'detect-package-manager'
 import fs from 'fs'
 
 import { PROJECT_PACKAGE_PATH } from '../../shared/constants'
+
+import { SWAGGER_UI_DIST_PACKAGE_PATHS_BY_PM } from './get-config-constants'
 
 async function readPackageJsonContent() {
   try {
@@ -23,4 +26,10 @@ function parsePackageJson(content: string) {
   }
 }
 
-export { parsePackageJson, readPackageJsonContent }
+async function getSwaggerUiDistPackagePathBaseOnPackageManager() {
+  const pm = await detect()
+
+  return SWAGGER_UI_DIST_PACKAGE_PATHS_BY_PM[pm]
+}
+
+export { getSwaggerUiDistPackagePathBaseOnPackageManager, parsePackageJson, readPackageJsonContent }
