@@ -1,2 +1,2 @@
-export * from './constants'
-export * from './utils'
+export * from './logic/get-config'
+export * from './shared/constants'
