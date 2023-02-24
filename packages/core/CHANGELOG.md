@@ -1,5 +1,18 @@
 # @static-swagger-ui/core
 
+## 0.2.0
+
+### Minor Changes
+
+- [#5](https://github.com/yonycalsin/static-swagger-ui/pull/5) [`0e238e0`](https://github.com/yonycalsin/static-swagger-ui/commit/0e238e0e8674e4665e19ade47393e84bb827aef0) Thanks [@yonycalsin](https://github.com/yonycalsin)! - add logic to generate the static dist
+
+- [#8](https://github.com/yonycalsin/static-swagger-ui/pull/8) [`e7001f5`](https://github.com/yonycalsin/static-swagger-ui/commit/e7001f529750b846e9c79bb1bba9c4ff1649ced8) Thanks [@yonycalsin](https://github.com/yonycalsin)! - add logic to set the openapi file
+
+### Patch Changes
+
+- Updated dependencies [[`d43c8ef`](https://github.com/yonycalsin/static-swagger-ui/commit/d43c8efee9320ebfd25a9a7e001c9fabb62a4aa3)]:
+  - @static-swagger-ui/common@0.3.0
+
 ## 0.1.1
 
 ### Patch Changes

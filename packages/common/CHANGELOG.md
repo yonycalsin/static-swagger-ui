@@ -1,5 +1,11 @@
 # @static-swagger-ui/common
 
+## 0.3.0
+
+### Minor Changes
+
+- [#7](https://github.com/yonycalsin/static-swagger-ui/pull/7) [`d43c8ef`](https://github.com/yonycalsin/static-swagger-ui/commit/d43c8efee9320ebfd25a9a7e001c9fabb62a4aa3) Thanks [@yonycalsin](https://github.com/yonycalsin)! - add openapi's spec file
+
 ## 0.2.0
 
 ### Minor Changes
