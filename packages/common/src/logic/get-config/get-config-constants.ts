@@ -16,6 +16,8 @@ const PACKAGE_CONFIG_PROPERTY = 'staticSwaggerUi'
 const PRESET_CONFIGS: Record<ConfigPresets, PresetConfig> = {
   [ConfigPresets.NEXT_API_ROUTES]: {
     swaggerUiDistTargetPath: path.join('public', 'swagger'),
+    openapiSpecPath: path.join('public', 'swagger', 'openapi.yaml'),
+    openapiSpecPublicPath: './openapi.yaml',
   },
 }
 

@@ -28,6 +28,14 @@ async function getConfig() {
     if (!config.swaggerUiDistTargetPath) {
       config.swaggerUiDistTargetPath = presetConfig.swaggerUiDistTargetPath
     }
+
+    if (!config.openapiSpecPath) {
+      config.openapiSpecPath = presetConfig.openapiSpecPath
+    }
+
+    if (!config.openapiSpecPublicPath) {
+      config.openapiSpecPublicPath = presetConfig.openapiSpecPublicPath
+    }
   }
 
   const swaggerUiDistPackagePath = await getSwaggerUiDistPackagePathBaseOnPackageManager()
