@@ -1,5 +1,11 @@
 # @static-swagger-ui/cli
 
+## 0.2.0
+
+### Minor Changes
+
+- [#11](https://github.com/yonycalsin/static-swagger-ui/pull/11) [`0999245`](https://github.com/yonycalsin/static-swagger-ui/commit/0999245276df4362df2907274bf73815fbc45005) Thanks [@yonycalsin](https://github.com/yonycalsin)! - remove the using of commander
+
 ## 0.1.0
 
 ### Minor Changes
