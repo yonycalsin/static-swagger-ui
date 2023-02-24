@@ -1,1 +1,1 @@
-export { default as moveDistToPublic } from './move-dist-to-public'
+export * from './logic/generate-static-dist'
